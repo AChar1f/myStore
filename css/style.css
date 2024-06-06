@@ -10,6 +10,18 @@
     display: none;
 }
 
+/* (OuterLayout) Display -> grid */
+
+body{
+    display: grid;
+    background-color: #FFD93D;
+}
+
+/* Number of Rows */
+body {
+    grid-template-rows: auto minmax(100%, 100dvh) auto;
+}
+
 /* Navbar */
 .navbar{
     background-color: #e97d25;
@@ -25,13 +37,8 @@ img {
     object-position: center;
 }
 
-/* Body */
-
-body{
-    background-color: #FFD93D;
-}
 
 /* Text align: center */
-:is(h2) {
+:is(h2, footer p) {
     text-align: center;
 }
