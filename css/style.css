@@ -12,7 +12,7 @@
 
 /* Navbar */
 .navbar{
-    background-color: #E8751A;
+    background-color: #e97d25;
     & img[alt='logo'] {
         width: 5rem;
     }
@@ -23,4 +23,15 @@ img {
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
+}
+
+/* Body */
+
+body{
+    background-color: #FFD93D;
+}
+
+/* Text align: center */
+:is(h2) {
+    text-align: center;
 }
