@@ -14,7 +14,8 @@
 
 body{
     display: grid;
-    background-color: #FFD93D;
+    background-color: #C69749;
+    color: #1B2430;
 }
 
 /* Number of Rows */
@@ -24,10 +25,13 @@ body {
 
 /* Navbar */
 .navbar{
-    background-color: #e97d25;
+    background-color: #581C0C;
     & img[alt='logo'] {
         width: 5rem;
     }
+}
+.nav-link {
+    color: #F1E3CB;
 }
 
 /* All images */
@@ -41,4 +45,13 @@ img {
 /* Text align: center */
 :is(h2, footer p) {
     text-align: center;
+}
+
+/* Card style */
+.card {
+    width: 18rem;
+    background-color: burlywood;
+    padding-top: 10px;
+    margin: auto;
+    
 }
