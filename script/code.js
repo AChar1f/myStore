@@ -72,7 +72,11 @@ let products = JSON.parse( localStorage.getItem('products') )
     ]
 )) 
 
+// to display current year
+document.querySelector('[currentYear]').textContent = new Date().getUTCFullYear()
+
 function recentProducts() {
+    try{
     let arrSize = products.length 
     let latestProducts = products.reverse().slice(0, arrSize >> 1)
     latestProducts.forEach(product => {
@@ -87,5 +91,14 @@ function recentProducts() {
         </div>
         `
     })
+    } catch(e) {
+        wrapper.textContent = "Please contact our administrator."
+        setTimeout(() => {
+            location.reload()
+        }, 
+            2000
+        )
+    }
+    
 }
 recentProducts()
